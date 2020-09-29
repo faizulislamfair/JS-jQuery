@@ -122,8 +122,120 @@
    <h2 style="text-align: center; color: darkgoldenrod;">If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable:</h2>
 
    <h2 id="demo4" style="text-align: center; color: darkgoldenrod;"></h2>
+   
+   <br> <br> <br> <br>
+
+   <h2 style="text-align: center; color:crimson">HTML events are "things" that happen to HTML elements.
+    <br>
+    When JavaScript is used in HTML pages, JavaScript can "react" on these events.</h2>
+    <br>
+    <h2 style="text-align: center; color:crimson">An onclick attribute is added to a "button" element and the time is shown:-</h2>
+    <button style="text-align: center; margin-left: 550px; color:crimson" onclick="document.getElementById('demolmao').innerHTML=Date()">The time is?</button>
+
+    <p style="text-align: center; color:crimson" id="demolmao"></p>
+
+    <br> <br>
+
+    <h2 style="text-align: center; color:crimson"> Now, the code changes the content of its own element</h2>
+    <br>
+    <button style="text-align: center; margin-left: 550px; color:crimson" onclick="this.innerHTML=Date()">The time is?</button>
+    <br> <br>
+    <h2 style="text-align: center; color:crimson">Using a function to display Date()</h2>
+    <button style="text-align: center; margin-left: 550px; color:crimson" onclick="displayDate()">The time is?</button>
+    <p style="text-align: center; color:crimson" id="komla"></p>
+    <br> <br>
+    <h2 style="text-align: center; color:crimson">JavaScript Type Conversion:-</h2>
+    <h2 style="text-align: center; color:crimson">There are 5 different data types in JS in which value is stored:</h2>
+
+    <h2 style="text-align: center; color:crimson">String</h2>
+    <h2 style="text-align: center; color:crimson">Number</h2>
+    <h2 style="text-align: center; color:crimson">Boolean</h2>
+    <h2 style="text-align: center; color:crimson">Object</h2>
+    <h2 style="text-align: center; color:crimson">Function</h2>
+    <br>
+    <h2 style="text-align: center; color:crimson">Objects are of 3 types in JS:</h2>
+    <h2 style="text-align: center; color:crimson">Object</h2>
+    <h2 style="text-align: center; color:crimson">Date</h2>
+    <h2 style="text-align: center; color:crimson">Array</h2>
+    <br>
+    <h2 style="text-align: center; color:crimson">There is no value in 2 types of data:</h2>
+    <h2 style="text-align: center; color:crimson">Null</h2>
+    <h2 style="text-align: center; color:crimson">Undefined</h2>
+    <br>
+    <h2 style="text-align: center; color:crimson">To know the data type of variable in JS typeof operator is used:</h2>
+    <h2 style="text-align: center; color:crimson" id="kola"></h2>
+    <br> <br> <br> <br>
+    <h2 style="text-align: center; color:crimson">A regular expression is a sequence of characters that forms a search pattern.</h2>
+    <h2 style="text-align: center; color:crimson">In JavaScript, regular expressions are often used with the two string methods: search() and replace(). <br>
+
+        The search() method uses an expression to search for a match, and returns the position of the match. <br>
+        
+        The replace() method returns a modified string where the pattern is replaced.</h2>
+    <br> <br>
+    <h2 style="text-align: center; color:crimson">Search a string for Kola!</h2>
+    <h2 style="text-align: center; color:crimson" id="khabo"></h2>
+    <br> <br>
+    <h2 style="text-align: center; color:crimson">Replacing a string!</h2>
+    <button style="text-align: center; margin-left: 550px; color:crimson" onclick="myFunctionss()">Hit 'em</button>
+    <h2 style="text-align: center; color:crimson" id="bananax">Please Visit Future.BD!</h2>
+    
+    <br> <br>
+
+    <h2 style="text-align: center; color:crimson">JSON: JavaScript Object Notation. <br>
+
+        JSON is a syntax for storing and exchanging data. <br>
+        
+        JSON is text, written with JavaScript object notation. <br> <br>
+
+        When exchanging data between a browser and a server, the data can only be text. <br>
+
+JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server. <br>
+
+We can also convert any JSON received from the server into JavaScript objects. <br>
+
+This way we can work with the data as JavaScript objects, with no complicated parsing and translations.
+    
+    </h2>
+
+    
+
+    <script>
+        function myFunctionss() {
+            var c = 
+            document.getElementById("bananax").innerHTML;
+            var d = 
+            c.replace("Future.BD","Kolagach");
+            document.getElementById("bananax").innerHTML = d; 
+        }
+    </script>
+    
+    <script>
+        var a = "Khabo Kola"; 
+        var b = a.search("Kola");
+        document.getElementById("khabo").innerHTML = b;
+    </script>
+        
 
    <script>
+
+       document.getElementById("kola").innerHTML =
+         typeof "Emma Stone" + "<br>" +
+         typeof 3.15 + "<br>" +
+         typeof NaN + "<br>" +
+         typeof false + "<br>" +
+         typeof new Date() + "<br>" +
+         typeof function () {} + "<br>" +
+         typeof newDay + "<br>" +
+         typeof [1,2,3,4] + "<br>" +
+         typeof {name: 'Kola khabo', age:21} + "<br>" +
+         typeof null; 
+
+
+
+function displayDate() {
+  document.getElementById("komla").innerHTML = Date();
+}
+
    myFunction();
   // code here can use carName as a global variable
   document.getElementById("demo4").innerHTML = "I can display " + carName;
