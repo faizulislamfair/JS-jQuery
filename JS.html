@@ -223,6 +223,34 @@ This way we can work with the data as JavaScript objects, with no complicated pa
 
     <br> <br> <br> <br>
 
+    <h3 style="text-align: center; color: darkblue;">A JavaScript string is zero or more characters written inside quotes.</h3>
+    <br> <br>
+    <h2 style="text-align: center; color: darkblue;">JavaScript String Methods</h2>
+    <h3 style="text-align: center; color: darkblue;">String methods help you to work with strings.</h3>
+    <br> <br>
+    <h2 style="text-align: center; color: darkblue;">String Length</h2>
+    <h3 style="text-align: center; color: darkblue;">The length property returns the length of a string:</h3>
+
+    <h3 style="text-align: center; color: darkblue;" id="begun"></h3>
+    <br> <br>
+
+    <h2 style="text-align: center; color: darkblue;">Finding a String in a String</h2>
+    <h3 style="text-align: center; color: darkblue;">The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:</h3>
+
+    <p style="text-align: center; color: darkblue;" id="demode"></p>
+
+<script>
+var strx = "Please locate where 'locate' occurs!";
+var posx = strx.indexOf("locate");
+document.getElementById("demode").innerHTML = posx;
+</script>
+
+    <script>
+        var laptop = "ABCDEFG"
+        var lappy = laptop.length;
+        document.getElementById("begun").innerHTML = lappy;
+    </script>
+
     <script>
         function myFunctionzzz(){
             document.getElementById("khuda_lagche").innerHTML = Boolean(10 > 5);
