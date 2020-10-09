@@ -239,6 +239,74 @@ This way we can work with the data as JavaScript objects, with no complicated pa
 
     <p style="text-align: center; color: darkblue;" id="demode"></p>
 
+    <br> <br> <br> <br>
+
+    <h2 style="text-align: center; color: darkorchid;">JavaScript arrays are used to store multiple values in a single variable.</h2>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkorchid;">Looping Array Elements</h3>
+
+    <p style="text-align: center; color: darkorchid;" id="demotrix"></p>
+
+    <h3 style="text-align: center; color: darkorchid;" >JavaScript Array Methods
+    </h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkorchid;" >Converting Arrays to Strings</h3>
+
+    <h3 style="text-align: center; color: darkorchid;" id="demovv"></h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkorchid;">JavaScript Sorting Arrays</h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkorchid;" >Sorting an Array</h3>
+
+    <h3 style="text-align: center; color: darkorchid;">The sort() method sorts an array alphabetically:</h3>
+
+    <br> <br>
+    <button style="text-align: center; margin-left: 550px; color: darkorchid" onclick="myFunctionsssss()">Try it</button>
+
+    <br> <br>
+    
+    <p style="text-align: center; color: darkorchid;" id="demoss"></p>
+
+    <br> <br>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demoss").innerHTML = fruits;
+        
+        function myFunctionsssss() {
+          fruits.sort();
+          document.getElementById("demoss").innerHTML = fruits;
+        }
+    </script>
+        
+
+    <script>
+        var fruitsee = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demovv").innerHTML = fruitsee.toString();
+        </script>
+
+    <script>
+        var fruits, text, fLen, i;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+        
+        
+        for (i = 0; i < fLen; i++) {
+          text += "<li>" + fruits[i] + "</li>";
+        }
+        
+        
+        document.getElementById("demotrix").innerHTML = text;
+        </script>
+
 <script>
 var strx = "Please locate where 'locate' occurs!";
 var posx = strx.indexOf("locate");
