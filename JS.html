@@ -275,7 +275,74 @@ This way we can work with the data as JavaScript objects, with no complicated pa
     
     <p style="text-align: center; color: darkorchid;" id="demoss"></p>
 
+    <br> <br> <br> <br>
+
+    <h3 style="text-align: center; color: gold">The Math object allows you to perform mathematical tasks. <br>
+
+        Math is not a constructor. <br> All properties/methods of Math can be called by using Math as an object, without creating it:</h3>
+
+        <br> <br>
+
+    <h3 style="text-align: center; color: gold">Math.PI returns PI:</h3>
+
+    <h3 style="text-align: center; color: gold" id="piDemo"></h3>
+
+    <h3 style="text-align: center; color: gold">Math.sqrt(16) returns the square root of 16:</h3>
+    
+    <h3 style="text-align: center; color: gold" id="sqrtDemo"></h3>
+
+    <h3 style="text-align: center; color: gold">Math.ceil object</h3>
+
+    <h3 style="text-align: center; color: gold" id="ceil"></h3>
+
+    <h3 style="text-align: center; color: gold">Math.floor object</h3>
+
+    <h3 style="text-align: center; color: gold" id="floor"></h3>
+
     <br> <br>
+
+    <h3 style="text-align: center; color: gold">JavaScript Date Object lets us work with dates:</h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: gold" id="time"></h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: gold">JavaScript functions are defined with the function keyword.</h3>
+
+    <h3 style="text-align: center; color: gold" id="penguin"></h3>
+
+    <br> <br> <br> <br>
+
+    <script>
+    var x = myFunctionabc(4, 3);
+    document.getElementById("penguin").innerHTML = x;
+
+    function myFunctionabc(a, b) {
+      return a * b;
+    }
+    </script>
+
+
+    <script>
+    var d = new Date();
+    document.getElementById("time").innerHTML = d;
+    </script>
+
+
+    <script>
+    var x = Math.PI;
+    var y = Math.sqrt(16);
+    var z = Math.ceil(1.4);
+    var a = Math.floor(1.4)
+
+    document.getElementById("piDemo").innerHTML = x;
+    document.getElementById("sqrtDemo").innerHTML = y;
+    document.getElementById("ceil").innerHTML = z;
+    document.getElementById("floor").innerHTML = a;
+
+    </script>
 
     <script>
         var fruits = ["Banana", "Orange", "Apple", "Mango"];
