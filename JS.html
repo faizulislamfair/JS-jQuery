@@ -315,6 +315,111 @@ This way we can work with the data as JavaScript objects, with no complicated pa
 
     <br> <br> <br> <br>
 
+    <h3 style="text-align: center; color: darkcyan">A JavaScript function does not perform any checking on parameter values (arguments).</h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkcyan" id="swim"></h3>
+
+    <br> <br>
+
+    <h3 id="swimming" style="text-align: center; color: darkcyan"></h3>
+
+    <br> <br>
+
+    <h3 id="guitar" style="text-align: center; color: darkcyan"></h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkcyan">
+        In JavaScript, almost "everything" is an object. <br>
+
+Booleans can be objects (if defined with the new keyword) <br>
+Numbers can be objects (if defined with the new keyword) <br>
+Strings can be objects (if defined with the new keyword) <br>
+Dates are always objects <br>
+Maths are always objects <br>
+Regular expressions are always objects <br>
+Arrays are always objects <br>
+Functions are always objects <br>
+Objects are always objects <br>
+All JavaScript values, except primitives, are objects.
+
+    </h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: darkcyan">
+        A primitive value is a value that has no properties or methods. <br>
+
+A primitive data type is data that has a primitive value. <br> <br>
+
+JavaScript defines 5 types of primitive data types: <br> <br>
+
+string <br>
+number <br>
+boolean <br>
+null <br>
+undefined
+    </h3>
+
+    <br> <br>
+
+    <h3 id="dolphin" style="text-align: center; color: darkcyan"></h3>
+
+    <br> <br>
+
+    <h3 id="platypus" style="text-align: center; color: darkcyan"></h3>
+
+    <script>
+        var shark = "";
+        var whale = {
+            fname:"Penguin",
+            lname:"Linux",
+            age:55
+        };
+        var f;
+        for (f in whale) {
+            shark += whale[f] + " ";
+        } 
+        document.getElementById("platypus").innerHTML = shark;
+    </script>
+
+    <script>
+        var penguin = {
+            firstname: "Kola",
+            lastname: "Yup",
+            age:10,
+            eyecolor:"blue"
+        };
+
+        document.getElementById("dolphin").innerHTML = penguin.firstname +
+        " Ami  " + penguin.age + " Ta Khabo.";
+    </script>
+
+    <script>
+        var x = myGuitar(100,200);
+        document.getElementById("guitar").innerHTML = x;
+
+        function myGuitar(a, b){
+            return a*b;
+        }
+    </script>
+
+    <script>
+        function kola(a, b){
+            return a*b;
+        }
+        document.getElementById("swimming").innerHTML = kola(50, 50);
+    </script>
+
+    <script>
+        function myFunction(x, y=5){
+            return x*y;
+        }
+        document.getElementById("swim").innerHTML = myFunction(5);
+    </script>
+
     <script>
     var x = myFunctionabc(4, 3);
     document.getElementById("penguin").innerHTML = x;
