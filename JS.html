@@ -371,6 +371,124 @@ undefined
 
     <h3 id="platypus" style="text-align: center; color: darkcyan"></h3>
 
+    <br> <br> <br> <br>
+
+    <h2 style="text-align: center; color: blue"> JS Object Methods </h2>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue"> Accessing Object Methods </h3>
+     
+    <br> <br>
+
+    <h3 id="object_method" style="text-align: center; color: blue"></h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue">Adding a Method to an Object</h3>
+
+    <br> <br>
+
+    <h3 id="adding_method_object" style="text-align: center; color: blue"></h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue">JS Form Validation</h3>
+
+    <br> <br>
+
+    <form style="text-align: center; color: blue" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input style="text-align: center; color: blue" type="submit" value="Submit">
+    </form>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue">JS API</h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue"> Enter a number & click OK: </h3>
+
+    <br> <br>
+
+    <input style="text-align: center; color: blue; margin-left: 550px;" id="JS_API1" type="number" min="100" max="300" required>
+
+    <br> <br>
+
+    <button style="text-align: center; color: blue; margin-left: 550px;" onclick="myFunctionAPI">PRESS</button>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue">If the number is less than 100 or greater than 300, an error message will be displayed.</h3>
+
+    <br> <br>
+
+    <h3 id="JS_API2" style="text-align: center; color: blue"></h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue">JS HTML DOM</h3>
+
+    <br> <br>
+
+    <h3 style="text-align: center; color: blue">The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</h3>
+
+    <br> <br>
+
+    
+
+    <script>
+        function myFunctionAPI() {
+          var inpObj = document.getElementById("JS_API1");
+          if (!inpObj.checkValidity()) {
+            document.getElementById("JS_API2").innerHTML = inpObj.validationMessage;
+          } else {
+            document.getElementById("JS_API2").innerHTML = "Input OK";
+          } 
+        } 
+    </script>
+
+
+
+    <script>
+        function validateForm() {
+          var x = document.forms["myForm"]["fname"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+
+    <script>
+        var person = {
+          firstName: "Miss",
+          lastName : "Dunhill",
+          id     : 5566,
+        };
+        person.name = function() {
+          return this.firstName + " " + this.lastName;
+        };
+        
+        document.getElementById("adding_method_object").innerHTML =
+        person.name() + " is always stuck in my head!"; 
+        </script>
+
+    <script>
+        var person = {
+          firstName: "Miss",
+          lastName : "Dunhill",
+          id     : 5566,
+          fullName : function() {
+            return this.firstName + " " + this.lastName;
+          }
+        };
+
+        document.getElementById("object_method").innerHTML = person.fullName();
+
+    </script>
+
     <script>
         var shark = "";
         var whale = {
