@@ -41,7 +41,9 @@
 
 // console.log(newTask);
 
-let lastItem = document.querySelector('.item:nth-child(2)');
+//let lastItem = document.querySelector('.item:nth-child(2)');
+
+// let lastItem = document.querySelector('#items').querySelector('.item:nth-child(2)');
 
 //console.log(lastItems);
 
@@ -51,4 +53,24 @@ let lastItem = document.querySelector('.item:nth-child(2)');
 //     element.style.color = 'orange';
 // }
 
-lastItem.style.color = 'blue';
+// lastItem.style.color = 'cyan';
+
+// const grandparent = document.querySelector('.todo-list');
+//const parent = grandparent.children;
+// const children = grandparent.querySelectorAll('.item');
+
+// console.log(children);
+
+// const childrenOne = document.querySelector('.item');
+// const parent = children.parentElement;
+// console.log(parent);
+
+// const grandparent = children.closest('.todo-list');
+
+// console.log(grandparent);
+
+const childrenTwo = document.querySelector('.item').nextElementSibling;
+const childrenOne = childrenTwo.previousElementSibling;
+childrenOne.style.color = 'cyan';
+
+console.log(childrenTwo);
