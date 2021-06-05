@@ -69,8 +69,26 @@
 
 // console.log(grandparent);
 
-const childrenTwo = document.querySelector('.item').nextElementSibling;
-const childrenOne = childrenTwo.previousElementSibling;
-childrenOne.style.color = 'cyan';
+// const childrenTwo = document.querySelector('.item').nextElementSibling;
+// const childrenOne = childrenTwo.previousElementSibling;
+// childrenOne.style.color = 'cyan';
 
-console.log(childrenTwo);
+// console.log(childrenTwo);
+
+
+// Creating an element
+
+const divElement = document.createElement('div');
+
+divElement.className = 'red';
+
+divElement.setAttribute('id', 'red');
+divElement.setAttribute('title', 'Red Div');
+
+const container = document.querySelector('.todo-list');
+
+// const h2Element = container.querySelector('h2');
+// container.insertBefore(divElement, h2Element);
+
+//const a = container.appendChild(divElement);
+container.append(divElement, document.createElement('p'), 'hello world');
