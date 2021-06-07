@@ -78,17 +78,26 @@
 
 // Creating an element
 
-const divElement = document.createElement('div');
+// const divElement = document.createElement('div');
 
-divElement.className = 'red';
+// divElement.className = 'red';
 
-divElement.setAttribute('id', 'red');
-divElement.setAttribute('title', 'Red Div');
+// divElement.setAttribute('id', 'red');
+// divElement.setAttribute('title', 'Red Div');
 
-const container = document.querySelector('.todo-list');
+// const container = document.querySelector('.todo-list');
 
 // const h2Element = container.querySelector('h2');
 // container.insertBefore(divElement, h2Element);
 
 //const a = container.appendChild(divElement);
-container.append(divElement, document.createElement('p'), 'hello world');
+// container.append(divElement, document.createElement('p'), 'hello world');
+
+
+// Event Listener
+
+const inputElement = document.querySelector('input[type="text"]');
+
+inputElement.addEventListener('keypress', (event) => {
+     console.log(event);
+});
