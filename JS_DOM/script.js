@@ -96,8 +96,59 @@
 
 // Event Listener
 
-const inputElement = document.querySelector('input[type="text"]');
+// const inputElement = document.querySelector('input[type="text"]');
 
-inputElement.addEventListener('keypress', (event) => {
-     console.log(event);
-});
+// inputElement.addEventListener('keypress', (event) => {
+//      console.log(event);
+// });
+
+
+
+
+              /**       To Do App      */
+
+
+
+
+// select elements & assign them to variables
+
+let newTask = document.querySelector('#new-task');
+let form = document.querySelector('form');
+let todoUl = document.querySelector('#items');
+let completeUl = document.querySelector('.complete-list ul');
+
+// functions
+
+let createTask = function(task) {
+     let listitem = document.createElement('li');
+     let checkBox = document.createElement('input');
+     let label = document.createElement('label');
+
+     label.innerText = task;
+     checkBox.type = 'checkbox';
+
+     listitem.appendChild(checkBox);
+     listitem.appendChild(label);
+
+     return listitem;
+}
+
+let addTask = function(event) {
+    event.preventDefault();
+    let listitem = createTask(newTask.value);
+    todoUl.appendChild(listitem);
+    newTask.value = "";
+    // bind the new list item to the incomplete list
+    bindInCompleteItems(listitem, completeTask);
+}
+
+
+let completeTask = function(event) {
+    let listItem = this.parentNode;
+}
+
+
+let bindInCompleteItems = function(taskItem, checkboxClick) {
+     let checkBox = taskItem.querySelector('input[type="checkbox"]');
+     checkBox.onchange = changeboxClick;
+}
