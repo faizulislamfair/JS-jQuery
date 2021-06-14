@@ -16,14 +16,41 @@
 
 //console.log(number(10));
 
-var javascript = {
-    name: 'JavaScript',
-    libraries: ['React', 'Angular', 'Vue'],
-    printLibraries: function() {
-        this.libraries.forEach(function(a) {
-             console.log(`${this.name} loves ${a}`);
-        });
-    },
+// const searchInput = document.querySelector(".search");
+
+// const display = document.querySelector(".result");
+
+// const thanks = document.querySelector(".thanks");
+
+
+/* Normal function that works perfectly */
+// function show() {
+//     display.innerHTML = this.value;
+//     var self = this;
+//     setTimeout(function () {
+//         thanks.innerHTML = `You have typed: ${self.value}`;
+//     }, 1000);
+// }
+
+// searchInput.addEventListener("keyup", () => {
+//     display.innerHTML = this.value;
+// });
+
+
+// var javascript = {
+//     name: 'JavaScript',
+//     libraries: ['React', 'Angular', 'Vue'],
+//     printLibraries: function() {
+//         this.libraries.forEach((a) => console.log(`${this.name} penguin ${a}`));
+//     },
+// };
+
+// javascript.printLibraries();
+
+// new keyword in fat arrow function
+
+var Person = (name) => {
+    this.name = name;
 };
 
-javascript.printLibraries();
+var Faizul = new Person('Fair');
