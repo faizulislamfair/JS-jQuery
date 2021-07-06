@@ -1,0 +1,12 @@
+{
+    "duckling" : [
+    {
+        "name": "Panda",
+        "food": "bamboo"
+    },
+    {
+         "name": "Penguin",
+         "house": "igloo"
+    }
+  ]
+}

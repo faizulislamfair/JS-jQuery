@@ -1,0 +1,38 @@
+{
+    "okapia": [
+{
+    "name": "Panda Buddies",
+    "middlename": null,
+    "age": 105,
+    "isPanda": true,
+    "categories": ["baby panda", "kung fu panda"],
+    "duckling" : [
+        {
+            "name": "Panda",
+            "food": "bamboo"
+        },
+        {
+             "name": "Penguin",
+             "house": "igloo"
+        }
+      ]
+},
+{
+    "name": "Penguins",
+    "middlename": null,
+    "age": 205,
+    "isPenguin": true,
+    "categories": ["baby penguin", "king penguins"],
+    "duckling" : [
+        {
+            "name": "Panda",
+            "food": "bamboo"
+        },
+        {
+             "name": "Penguin",
+             "house": "igloo"
+        }
+      ]
+}
+]
+}
